@@ -1,0 +1,701 @@
+
+================================================================================
+FILE: C:\Users\Anusrii E\portfolio\index.html
+================================================================================
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusrii E | B.tech Artificial Intelligence & Data Science</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="logo">A<span></span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="about">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-tag">✦ Welcome to my Portfolio</p>
+    <h1>Anusrii <span>E</span></h1>
+    <h2>B.tech Artificial Intelligence & Data Science<span class="divider">|</span>Software Developer</h2>
+    <p class="hero-desc">
+      Passionate developer with hands-on experience in web development, Flutter, and machine learning.
+      Building real-world applications and solving problems with data-driven approaches.
+    </p>
+    <div class="hero-btns">
+      <a href="resume.pdf" class="btn-gold" download><i class="fas fa-download"></i> Download Resume</a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span>3+</span><p>Internships</p></div>
+      <div class="stat"><span>5+</span><p>Projects</p></div>
+      <div class="stat"><span>2+</span><p>Certifications</p></div>
+    </div>
+  </div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+</section>
+
+<!-- SKILLS -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <p class="label">What I Know</p>
+    <h2 class="section-title">Technical <span>Skills</span></h2>
+    <div class="skills-grid">
+      <div class="skill-item"><i class="fab fa-python"></i><span>Python</span></div>
+      <div class="skill-item"><i class="fab fa-java"></i><span>Java</span></div>
+      <div class="skill-item"><i class="fas fa-mobile-alt"></i><span>Flutter / Dart</span></div>
+      <div class="skill-item"><i class="fas fa-database"></i><span>SQL & DBMS</span></div>
+      <div class="skill-item"><i class="fas fa-brain"></i><span>Machine Learning</span></div>
+      <div class="skill-item"><i class="fas fa-chart-bar"></i><span>Data Science</span></div>
+      <div class="skill-item"><i class="fas fa-network-wired"></i><span>Deep Learning</span></div>
+      <div class="skill-item"><i class="fas fa-code"></i><span>Web Development</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section alt" id="experience">
+  <div class="section-inner">
+    <p class="label">My Journey</p>
+    <h2 class="section-title">Work <span>Experience</span></h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Software Development Intern</h3>
+              <p class="company"><i class="fas fa-building"></i>ZOHO CORPORATION</p>
+            </div>
+            <span class="badge">Internship</span>
+          </div>
+          <p>Worked on real-time applications, debugging, and improving performance across enterprise-level software systems.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Flutter Developer Intern</h3>
+              <p class="company"><i class="fas fa-building"></i>ABSERVETECH PVT LTD</p>
+            </div>
+            <span class="badge">Internship</span>
+          </div>
+          <p>Designed and developed a full-featured food ordering mobile application using Flutter and Dart.</p>
+        </div>
+      </div>
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Python Developer Intern</h3>
+              <p class="company"><i class="fas fa-building"></i>TECHNOHACKS</p>
+            </div>
+            <span class="badge">Internship(Remote)</span>
+          </div>
+          <p>Developed Python scripts and performed basic data analysis tasks.</p>
+        </div>
+      </div>
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Python Developer Intern</h3>
+              <p class="company"><i class="fas fa-building"></i>CODSOFT</p>
+            </div>
+            <span class="badge">Internship(Remote)</span>
+          </div>
+          <p> Completed Python internship focused on application development
+and problem-solving</p>
+        </div>
+      </div>
+       <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Python Developer Intern</h3>
+              <p class="company"><i class="fas fa-building"> INTERNPE</i></p>
+            </div>
+            <span class="badge">Internship(Remote)</span>
+          </div>
+          <p>Worked on Python-based tasks and mini projects to strengthen
+coding skills.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Machine Learning Intern</h3>
+              <p class="company"><i class="fas fa-building"></i>ELYSIUM TECHNOLOGIES PVT LTD</p>
+            </div>
+            <span class="badge">Internship</span>
+          </div>
+          <p>Built and evaluated machine learning models with a focus on data preprocessing and feature engineering.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- PROJECTS -->
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-inner">
+    <p class="label">My Work</p>
+    <h2 class="section-title">All <span>Projects</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- MEDICARE APP -->
+      <div class="project-card">
+        <div class="project-icon">🏥</div>
+        <h3>Medicare Reminder App</h3>
+        <p>
+          Built a Flutter-based healthcare application for managing patient records and medical services.
+          Integrated backend services for secure data handling.
+        </p>
+        <div class="project-tags">
+          <span>Flutter</span><span>Dart</span><span>Firebase</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/meedicare_flutter_app" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- FRAUD DETECTION -->
+      <div class="project-card">
+        <div class="project-icon">💳</div>
+        <h3>Credit Card Fraud Detection</h3>
+        <p>
+          Developed a machine learning model to detect fraudulent transactions using anomaly detection.
+          Performed preprocessing, feature scaling, and EDA on imbalanced datasets.
+        </p>
+        <div class="project-tags">
+          <span>Python</span><span>Machine Learning</span><span>Scikit-learn</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/financial-visualization-project" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- CT MRI IMAGE FUSION -->
+      <div class="project-card">
+        <div class="project-icon">🧠</div>
+        <h3>CT & MRI Image Fusion</h3>
+        <p>
+          Developed an image fusion system combining CT and MRI scans to improve medical image analysis.
+        </p>
+        <div class="project-tags">
+          <span>Python</span><span>Deep Learning</span><span>Image Processing</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/CT_MRI_Image_Fusion" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- IMAGE AUGMENTATION -->
+      <div class="project-card">
+        <div class="project-icon">🖼️</div>
+        <h3>Image Augmentation using PyTorch</h3>
+        <p>
+          Implemented image augmentation techniques to improve dataset diversity for deep learning models.
+        </p>
+        <div class="project-tags">
+          <span>Python</span><span>PyTorch</span><span>Deep Learning</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/image-augmentation-pytorch" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- FINANCIAL VISUALIZATION -->
+      <div class="project-card">
+        <div class="project-icon">📊</div>
+        <h3>Financial Data Visualization</h3>
+        <p>
+          Analyzed and visualized financial data using charts and graphs to support decision-making.
+        </p>
+        <div class="project-tags">
+          <span>Python</span><span>Matplotlib</span><span>Data Analysis</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/financial-visualization-project" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- CHATBOT -->
+      <div class="project-card">
+        <div class="project-icon">🤖</div>
+        <h3>Chatbot Application</h3>
+        <p>
+          Developed an intelligent chatbot capable of responding to user queries using NLP techniques.
+        </p>
+        <div class="project-tags">
+          <span>Python</span><span>NLP</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/chatbot" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div class="project-card">
+        <div class="project-icon">🌐</div>
+        <h3>Personal Portfolio Website</h3>
+        <p>
+          Designed and developed a personal portfolio website to showcase projects, skills, and experience.
+        </p>
+        <div class="project-tags">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/elananu/anusrii.github.io" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<ul class="cert-list">
+  <li>Data Science & Analytics – HP Foundation</li>
+  <li>Python for Data Science – IBM</li>
+  <li>Introduction to Generative AI – Google</li>
+  <li>Foundations of Cybersecurity – Google</li>
+  <li>Overview of Emerging Technologies – IUCEE Foundation</li>
+
+  <li>Python Programming – GUVI (Aug 2023)</li>
+  <li>Python Essentials 1 – Cisco</li>
+  <li>Python Essentials 2 – Cisco</li>
+  <li>Python Basic – HackerRank</li>
+
+  <li>Introduction to Machine Learning – Microsoft</li>
+  <li>Artificial Intelligence – Udemy</li>
+
+  <li>Introduction to Cybersecurity – Cisco</li>
+  <li>Introduction to Data Science – Cisco</li>
+  <li>Operating System Basics – Cisco</li>
+  <li>OS: File System and Threads – Udemy</li>
+
+  <li>Java – 5 Star (HackerRank)</li>
+  <li>Python – 5 Star (HackerRank)</li>
+  <li>SQL – 5 Star (HackerRank)</li>
+
+  <li>NPTEL – Big Data Computing</li>
+</ul>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-inner">
+    <p class="label">Let's Talk</p>
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-envelope"></i></div>
+          <div><p class="c-label">Email</p><a href="mailto:anusriie@gmail.com">anusriie@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fas fa-phone"></i></div>
+          <div><p class="c-label">Phone</p><a href="tel:8148301409">8148301409</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fab fa-github"></i></div>
+          <div><p class="c-label">GitHub</p><a href="https://github.com/elananu" target="_blank">github.com/elananu</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="c-icon"><i class="fab fa-linkedin"></i></div>
+          <div><p class="c-label">LinkedIn</p><a href="https://linkedin.com/in/anu-srii" target="_blank">linkedin.com/in/anu-srii</a></div>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleSubmit(event)">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Anusrii E</span> — Crafted with passion</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+================================================================================
+FILE: C:\Users\Anusrii E\portfolio\script.js
+================================================================================
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+
+// Close nav on link click (mobile)
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
+
+// Navbar shadow on scroll
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.style.boxShadow = window.scrollY > 50 ? '0 4px 30px rgba(0,0,0,0.4)' : 'none';
+});
+
+// Active nav link
+const sections = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+  });
+  links.forEach(a => {
+    a.classList.remove('active');
+    if (a.getAttribute('href') === '#' + current) a.classList.add('active');
+  });
+});
+
+// Scroll fade-in
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = '1';
+      e.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.skill-item, .project-card, .timeline-card, .cert-card, .contact-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+
+// Contact form
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('button');
+  btn.textContent = '✓ Message Sent!';
+  btn.style.background = 'linear-gradient(135deg, #1D9E75, #5DCAA5)';
+  setTimeout(() => {
+    btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    btn.style.background = '';
+    e.target.reset();
+  }, 3000);
+}
+
+
+================================================================================
+FILE: C:\Users\Anusrii E\portfolio\style.css
+================================================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --gold: #c9a84c;
+  --gold-light: #f0d080;
+  --gold-dark: #8a6a1f;
+  --navy: #050d1a;
+  --navy2: #0a1628;
+  --navy3: #0f2040;
+  --text: #e8e8f0;
+  --muted: #7a8aa0;
+  --white: #ffffff;
+  --card-bg: rgba(255,255,255,0.04);
+  --card-border: rgba(201,168,76,0.2);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--navy);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* ── NAVBAR ── */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  background: rgba(5,13,26,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+}
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 2rem;
+}
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; color: var(--white);
+}
+.logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a {
+  color: var(--muted); text-decoration: none;
+  font-size: 0.88rem; letter-spacing: 0.05em;
+  text-transform: uppercase; font-weight: 500;
+  transition: color 0.3s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+.hamburger {
+  display: none; background: none; border: 1px solid var(--card-border);
+  color: var(--gold); padding: 8px 12px; border-radius: 6px; cursor: pointer;
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  background: radial-gradient(ellipse at 20% 50%, #0a1f3d 0%, var(--navy) 60%);
+  text-align: center; padding: 8rem 2rem 4rem;
+}
+.hero-orb {
+  position: absolute; border-radius: 50%;
+  filter: blur(80px); pointer-events: none;
+}
+.orb1 {
+  width: 400px; height: 400px;
+  background: rgba(201,168,76,0.07);
+  top: -100px; right: -100px;
+}
+.orb2 {
+  width: 300px; height: 300px;
+  background: rgba(30,60,140,0.3);
+  bottom: -80px; left: -80px;
+}
+.hero-content { position: relative; z-index: 2; max-width: 780px; }
+.hero-tag {
+  font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.5rem;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  line-height: 1.1; margin-bottom: 0.5rem; color: var(--white);
+}
+.hero h1 span { color: var(--gold); }
+.hero h2 {
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 400; color: var(--muted);
+  margin-bottom: 1.5rem; letter-spacing: 0.03em;
+}
+.divider { color: var(--gold); margin: 0 0.5rem; }
+.hero-desc {
+  font-size: 1rem; color: #8090a8; line-height: 1.8;
+  max-width: 580px; margin: 0 auto 2.5rem;
+}
+.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+.btn-gold {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  color: #050d1a; padding: 14px 30px; border-radius: 50px;
+  text-decoration: none; font-weight: 600; font-size: 0.9rem;
+  border: none; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 24px rgba(201,168,76,0.3);
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(201,168,76,0.45); }
+.btn-ghost {
+  border: 1px solid rgba(201,168,76,0.4); color: var(--gold);
+  padding: 14px 30px; border-radius: 50px;
+  text-decoration: none; font-weight: 500; font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.btn-ghost:hover { background: rgba(201,168,76,0.08); }
+.hero-stats { display: flex; gap: 3rem; justify-content: center; }
+.stat span {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem; color: var(--gold); display: block;
+}
+.stat p { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+/* ── SECTIONS ── */
+.section { padding: 6rem 2rem; }
+.alt { background: var(--navy2); }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.label {
+  font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em;
+  color: var(--gold); margin-bottom: 0.75rem;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--white); margin-bottom: 3rem;
+}
+.section-title span { color: var(--gold); }
+
+/* ── SKILLS ── */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.25rem;
+}
+.skill-item {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px; padding: 1.75rem 1rem;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s, background 0.3s;
+}
+.skill-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+.skill-item i { font-size: 2rem; color: var(--gold); display: block; margin-bottom: 0.75rem; }
+.skill-item span { font-size: 0.88rem; color: var(--text); font-weight: 500; }
+
+/* ── TIMELINE ── */
+.timeline { position: relative; padding-left: 2rem; }
+.timeline::before {
+  content: ''; position: absolute; left: 0; top: 0; bottom: 0;
+  width: 1px; background: linear-gradient(to bottom, var(--gold), transparent);
+}
+.timeline-item { position: relative; margin-bottom: 2.5rem; }
+.timeline-dot {
+  position: absolute; left: -2.4rem; top: 1.25rem;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--gold); border: 3px solid var(--navy2);
+  box-shadow: 0 0 12px rgba(201,168,76,0.5);
+}
+.timeline-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 16px; padding: 1.5rem 1.75rem;
+  transition: border-color 0.3s;
+}
+.timeline-card:hover { border-color: var(--gold); }
+.tc-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.75rem; flex-wrap: wrap; }
+.timeline-card h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 0.3rem; }
+.company { font-size: 0.85rem; color: var(--gold); }
+.company i { margin-right: 5px; }
+.timeline-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; }
+.badge {
+  background: rgba(201,168,76,0.12); color: var(--gold);
+  font-size: 0.72rem; padding: 4px 12px; border-radius: 50px;
+  border: 1px solid rgba(201,168,76,0.3);
+  white-space: nowrap; font-weight: 600; letter-spacing: 0.05em;
+}
+
+/* ── PROJECTS ── */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+.project-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 20px; padding: 2rem;
+  transition: transform 0.3s, border-color 0.3s;
+}
+.project-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+.project-icon {
+  width: 56px; height: 56px; border-radius: 14px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; color: #050d1a; margin-bottom: 1.25rem;
+}
+.project-card h3 { font-size: 1.1rem; color: var(--white); margin-bottom: 0.6rem; }
+.project-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1rem; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.25rem; }
+.project-tags span {
+  background: rgba(201,168,76,0.1); color: var(--gold);
+  font-size: 0.75rem; padding: 4px 12px; border-radius: 50px;
+  border: 1px solid rgba(201,168,76,0.25);
+}
+.project-links a {
+  color: var(--gold); text-decoration: none; font-size: 0.85rem; font-weight: 500;
+}
+.project-links a:hover { text-decoration: underline; }
+
+/* ── CERTIFICATIONS ── */
+.cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.cert-card {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 16px; padding: 2rem; text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.cert-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+.cert-icon { font-size: 2.5rem; color: var(--gold); margin-bottom: 1rem; }
+.cert-card h3 { font-size: 1rem; color: var(--white); margin-bottom: 0.4rem; }
+.cert-card p { font-size: 0.85rem; color: var(--muted); }
+
+/* ── CONTACT ── */
+.contact-wrapper { display: grid; grid-template-columns: 1fr 1.4fr; gap: 3rem; align-items: start; }
+.contact-info { display: flex; flex-direction: column; gap: 1.25rem; }
+.contact-item {
+  display: flex; gap: 1rem; align-items: center;
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  border-radius: 14px; padding: 1rem 1.25rem;
+}
+.c-icon {
+  width: 42px; height: 42px; border-radius: 10px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  display: flex; align-items: center; justify-content: center;
+  color: #050d1a; font-size: 1rem; flex-shrink: 0;
+}
+.c-label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+.contact-item a { color: var(--text); text-decoration: none; font-size: 0.9rem; }
+.contact-item a:hover { color: var(--gold); }
+.contact-form { display: flex; flex-direction: column; gap: 1rem; }
+.contact-form input, .contact-form textarea {
+  background: var(--card-bg); border: 1px solid var(--card-border);
+  color: var(--text); padding: 14px 16px; border-radius: 12px;
+  font-family: 'Inter', sans-serif; font-size: 0.9rem; outline: none;
+  transition: border-color 0.3s;
+}
+.contact-form input:focus, .contact-form textarea:focus { border-color: var(--gold); }
+.contact-form input::placeholder, .contact-form textarea::placeholder { color: var(--muted); }
+
+/* ── FOOTER ── */
+footer {
+  text-align: center; padding: 2rem;
+  border-top: 1px solid rgba(201,168,76,0.1);
+  color: var(--muted); font-size: 0.85rem;
+}
+footer span { color: var(--gold); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: rgba(5,13,26,0.97); padding: 1.5rem 2rem; gap: 1.2rem; border-bottom: 1px solid var(--card-border); }
+  .nav-links.open { display: flex; }
+  .hamburger { display: block; }
+  .hero-stats { gap: 2rem; }
+  .contact-wrapper { grid-template-columns: 1fr; }
+  .timeline { padding-left: 1.5rem; }
+}
+
