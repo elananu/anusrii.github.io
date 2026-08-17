@@ -1,1376 +1,515 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>Anusrii E | AI Engineer</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anusrii E — Software Developer &amp; AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Anusrii E — Final-year B.Tech AI &amp; Data Science student building full-stack and ML systems: MedRoute, Agri-AI, AI Bug Tracker, CourierTrack Pro, FinGuard-AI, AgriPrice Forecasting.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-<link rel="stylesheet"
-href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
-<link rel="stylesheet"
-href="style.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!--==========================
-PRELOADER
-===========================-->
+<a class="skip-link" href="#main">Skip to content</a>
 
-<div id="loader">
-
-<div class="spinner"></div>
-
-</div>
-
-<!--==========================
-HEADER
-===========================-->
-
-<header>
-
-<nav>
-
-<div class="logo">
-
-Anusrii<span>.</span>
-
-</div>
-
-<ul>
-
-<li>
-
-<a href="#home">
-
-Home
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#about">
-
-About
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#skills">
-
-Skills
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#experience">
-
-Experience
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#projects">
-
-Projects
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#certifications">
-
-Certificates
-
-</a>
-
-</li>
-
-<li>
-
-<a href="#contact">
-
-Contact
-
-</a>
-
-</li>
-
-</ul>
-
-<a href="resume.pdf"
-
-download
-
-class="resume">
-
-Download Resume
-
-</a>
-
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="logo">AE<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
-</header>
+<main id="main">
 
-<!--==========================
-HERO
-===========================-->
+<!-- HERO -->
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="hero-inner">
+    <div class="hero-text" id="about">
+      <p class="eyebrow">// final-year b.tech · ai &amp; data science</p>
+      <h1>Anusrii&nbsp;E</h1>
+      <p class="hero-role">Software Developer <span class="sep">·</span> AI/ML Engineer <span class="sep">·</span> Flutter Developer</p>
+      <p class="hero-desc">
+        I build systems that move things where they need to go — medicine to patients, packages to doors,
+        signals to predictions. Full-stack engineer with hands-on machine learning experience, from
+        model training to production deployment.
+      </p>
+      <div class="hero-btns">
+        <a href="resume.pdf" class="btn-primary" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v13m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+          Download Résumé
+        </a>
+        <a href="#projects" class="btn-outline">View Projects</a>
+      </div>
+      <div class="hero-stats" role="list">
+        <div class="stat"><span class="stat-num">10</span><span class="stat-label">Public Repos</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Internships</span></div>
+        <div class="stat"><span class="stat-num">8.27</span><span class="stat-label">CGPA / 10</span></div>
+      </div>
+    </div>
 
-<section id="home"
-
-class="hero">
-
-<div class="hero-content"
-
-data-aos="fade-right">
-
-<h3>
-
-Hello, I'm
-
-</h3>
-
-<h1>
-
-Anusrii
-
-<span>
-
-E
-
-</span>
-
-</h1>
-
-<h2>
-
-Artificial Intelligence &
-Data Science Engineer
-
-</h2>
-
-<p>
-
-Passionate Full Stack Developer,
-Flutter Developer,
-Machine Learning Engineer,
-Python Developer and AI Enthusiast.
-
-I build real-world software solutions
-using Artificial Intelligence,
-Deep Learning,
-Flutter,
-FastAPI,
-React,
-Python and Machine Learning.
-
-</p>
-
-<div class="buttons">
-
-<a href="#projects"
-
-class="btn1">
-
-View Projects
-
-</a>
-
-<a href="resume.pdf"
-
-download
-
-class="btn2">
-
-Download CV
-
-</a>
-
-</div>
-
-<div class="social">
-
-<a href="https://github.com/elananu">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-<a href="https://linkedin.com/in/anu-srii">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-<a href="mailto:anusriie@gmail.com">
-
-<i class="fas fa-envelope"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-image"
-
-data-aos="fade-left">
-
-<img src="profile.png"
-
-alt="Anusrii">
-
-</div>
-
+    <div class="hero-graph" aria-hidden="true">
+      <svg viewBox="0 0 700 700" class="graph-svg">
+        <g class="graph-edges">
+          <path class="edge" d="M350,350 L610,350" />
+          <path class="edge" d="M350,350 L480,575" />
+          <path class="edge" d="M350,350 L220,575" />
+          <path class="edge" d="M350,350 L90,350" />
+          <path class="edge" d="M350,350 L220,125" />
+          <path class="edge" d="M350,350 L480,125" />
+        </g>
+        <g class="graph-pulses">
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L610,350'); animation-delay:0s" />
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L480,575'); animation-delay:0.5s" />
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L220,575'); animation-delay:1s" />
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L90,350'); animation-delay:1.5s" />
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L220,125'); animation-delay:2s" />
+          <circle class="pulse" r="4" style="offset-path:path('M350,350 L480,125'); animation-delay:2.5s" />
+        </g>
+        <g class="graph-nodes">
+          <g class="node node-center" transform="translate(350,350)">
+            <circle r="34" />
+            <text y="5">AE</text>
+          </g>
+          <g class="node" transform="translate(610,350)">
+            <circle r="20" />
+            <text y="-30">Agri-AI</text>
+          </g>
+          <g class="node" transform="translate(480,575)">
+            <circle r="20" />
+            <text y="34">FinGuard-AI</text>
+          </g>
+          <g class="node" transform="translate(220,575)">
+            <circle r="20" />
+            <text y="34">AgriPrice</text>
+          </g>
+          <g class="node" transform="translate(90,350)">
+            <circle r="20" />
+            <text y="-30">Fin. Viz</text>
+          </g>
+          <g class="node" transform="translate(220,125)">
+            <circle r="20" />
+            <text y="-30">CT-MRI Fusion</text>
+          </g>
+          <g class="node" transform="translate(480,125)">
+            <circle r="20" />
+            <text y="-30">Img Augment</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
 </section>
 
-<!--==========================
-STATS
-===========================-->
+<!-- STACK -->
+<section class="section" id="stack" aria-label="Technical skills">
+  <div class="section-inner">
+    <p class="label">What I Work With</p>
+    <h2 class="section-title">Technical <span>Stack</span></h2>
 
-<section class="stats">
-
-<div>
-
-<h1>
-
-6+
-
-</h1>
-
-<p>
-
-Internships
-
-</p>
-
-</div>
-
-<div>
-
-<h1>
-
-11+
-
-</h1>
-
-<p>
-
-Projects
-
-</p>
-
-</div>
-
-<div>
-
-<h1>
-
-18+
-
-</h1>
-
-<p>
-
-Certificates
-
-</p>
-
-</div>
-
-<div>
-
-<h1>
-
-500+
-
-</h1>
-
-<p>
-
-GitHub Commits
-
-</p>
-
-</div>
-
+    <div class="stack-grid">
+      <div class="stack-group">
+        <p class="stack-cat">Languages</p>
+        <div class="chip-row">
+          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">Dart</span><span class="chip">SQL</span><span class="chip">JavaScript</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <p class="stack-cat">Full-Stack &amp; Backend</p>
+        <div class="chip-row">
+          <span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">React / Vite</span><span class="chip">REST APIs</span><span class="chip">Flutter</span><span class="chip">JWT Auth</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <p class="stack-cat">AI / ML</p>
+        <div class="chip-row">
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span><span class="chip">YOLOv8</span><span class="chip">NLP</span><span class="chip">Computer Vision</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <p class="stack-cat">Data &amp; Storage</p>
+        <div class="chip-row">
+          <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">MongoDB</span><span class="chip">SQLAlchemy</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <p class="stack-cat">Deploy &amp; Tools</p>
+        <div class="chip-row">
+          <span class="chip">Render</span><span class="chip">Vercel</span><span class="chip">Hugging Face Spaces</span><span class="chip">Git / GitHub</span><span class="chip">VS Code</span><span class="chip">Android Studio</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ==========================
-ABOUT
-========================== -->
+<!-- EXPERIENCE -->
+<section class="section alt" id="experience" aria-label="Work experience">
+  <div class="section-inner">
+    <p class="label">Where I've Worked</p>
+    <h2 class="section-title">Experience</h2>
 
-<section id="about">
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Software Development Intern</h3>
+              <p class="company">Zoho Corporation <span class="tc-loc">· Madurai</span></p>
+            </div>
+            <span class="badge">Jan 2026 – Mar 2026</span>
+          </div>
+          <p>Built end-to-end features for the Murugan Pilgrim Guide App and Medicare App — from spec through implementation, debugging, and release across the full SDLC.</p>
+        </div>
+      </div>
 
-<h2 data-aos="fade-up">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Flutter Development Intern</h3>
+              <p class="company">MarqwonDynamics <span class="tc-loc">· Remote</span></p>
+            </div>
+            <span class="badge">May 2026 – Jun 2026</span>
+          </div>
+          <p>Built ML-driven forecasting models for an agricultural price prediction platform, translating raw time-series data into usable market intelligence.</p>
+        </div>
+      </div>
 
-About Me
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="tc-header">
+            <div>
+              <h3>Machine Learning Intern</h3>
+              <p class="company">Elysium Technologies Pvt. Ltd. <span class="tc-loc">· Madurai</span></p>
+            </div>
+            <span class="badge">Feb 2025 – Mar 2025</span>
+          </div>
+          <p>Applied ML algorithms to a real-world classification/prediction task, covering preprocessing, feature engineering, model training, and evaluation.</p>
+        </div>
+      </div>
+    </div>
 
-</h2>
-
-<p data-aos="fade-up">
-
-I'm <strong>Anusrii E</strong>, currently pursuing
-B.Tech in Artificial Intelligence & Data Science.
-
-I am passionate about Artificial Intelligence,
-Machine Learning, Flutter Development,
-Full Stack Development and Data Science.
-
-I enjoy building real-world applications that solve
-problems using modern technologies like
-Python, Flutter, FastAPI, React,
-Firebase and Machine Learning.
-
-I have completed multiple internships and built
-projects in AI, Healthcare,
-Financial Analytics, Agriculture,
-Computer Vision and Mobile Application Development.
-
-</p>
-
+    <div class="also-worked">
+      <p class="stack-cat">Also Completed Short-Term Programs With</p>
+      <div class="chip-row">
+        <span class="chip chip-quiet">AbserveTech — Flutter Dev Intern</span>
+        <span class="chip chip-quiet">TechnoHacks — Python Dev Intern</span>
+        <span class="chip chip-quiet">CodSoft — Python Dev Intern</span>
+        <span class="chip chip-quiet">InternPe — Python Dev Intern</span>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- ==========================
-SKILLS
-========================== -->
+<!-- PROJECTS -->
+<section class="section" id="projects" aria-label="Projects">
+  <div class="section-inner">
+    <p class="label">What I've Built</p>
+    <h2 class="section-title">Selected <span>Projects</span></h2>
 
-<section id="skills">
+    <p class="proj-group-label">AI / ML &amp; Data</p>
+    <div class="projects-grid">
 
-<h2 data-aos="fade-up">
+      <article class="project-card">
+        <p class="proj-tag">computer vision</p>
+        <h3>Agri-AI</h3>
+        <p class="proj-sub">AI-Based Crop Disease Detection</p>
+        <p class="proj-desc">
+          Trained a YOLOv8 object detection model on the PlantDoc dataset across 29 disease classes to identify
+          crop diseases from leaf images. Deployed via FastAPI on Render with a React/Vite frontend on Vercel,
+          using the Anthropic API to generate plain-language disease explanations.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">YOLOv8</span><span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Computer Vision</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/agri-ai-project-complete" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://agri-ai-project-complete.vercel.app/" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
 
-Technical Skills
+      <article class="project-card">
+        <p class="proj-tag">anomaly detection</p>
+        <h3>FinGuard-AI</h3>
+        <p class="proj-sub">Financial Fraud Detection &amp; Risk Analytics Dashboard</p>
+        <p class="proj-desc">
+          An interactive transaction analysis platform where users upload financial datasets as CSV, visualize
+          transaction statistics and risk patterns, and flag potentially suspicious activity via ML-based
+          anomaly detection — with results exportable for further review.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Scikit-learn</span><span class="chip">Plotly</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/FinGuard-AI" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://elananu-finguard-ai-app-subabr.streamlit.app/" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
 
-</h2>
+      <article class="project-card">
+        <p class="proj-tag">forecasting</p>
+        <h3>AgriPrice Forecasting</h3>
+        <p class="proj-sub">Agricultural Price Prediction Platform</p>
+        <p class="proj-desc">
+          A full-stack forecasting application with a Recharts-based dashboard supporting forecast tabs, CSV
+          upload, and data export. Backend deployed on Hugging Face Spaces, with scheduling and free-tier
+          sleep/wake issues resolved to keep forecasts running reliably.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Recharts</span><span class="chip">Hugging Face Spaces</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/agriprice-forecasting" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://agriprice-forecasting.vercel.app/" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
 
-<div class="skills">
+      <article class="project-card">
+        <p class="proj-tag">data visualization</p>
+        <h3>Financial Data Visualization</h3>
+        <p class="proj-sub">Financial Charting &amp; Analysis Tool</p>
+        <p class="proj-desc">
+          Analyzed and visualized financial datasets using charts and graphs to support data-driven decision-making,
+          covering trend analysis and exploratory data analysis (EDA) workflows.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">Matplotlib</span><span class="chip">Data Analysis</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/financial-visualization-project" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://elananu-financial-visualization-project-app-wyt3ui.streamlit.app//" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-python"></i>
-<h3>Python</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">medical imaging</p>
+        <h3>CT &amp; MRI Image Fusion</h3>
+        <p class="proj-sub">Multi-Modal Medical Image Fusion</p>
+        <p class="proj-desc">
+          Built an image fusion system combining CT and MRI scans into a single composite image to improve
+          medical image analysis and diagnostic detail.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">Deep Learning</span><span class="chip">Image Processing</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/CT_MRI_Image_Fusion" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://elananu-ct-mri-image-fusion-app-5qhud7.streamlit.app//" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-java"></i>
-<h3>Java</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">deep learning</p>
+        <h3>Image Augmentation (PyTorch)</h3>
+        <p class="proj-sub">Data Augmentation Pipeline for Deep Learning</p>
+        <p class="proj-desc">
+          Implemented a set of image augmentation techniques in PyTorch to improve dataset diversity and
+          reduce overfitting when training deep learning models.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Deep Learning</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/image-augmentation-pytorch" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+          <a href="https://elananu-image-augmentation-pytorch-app-mzg5or.streamlit.app/" target="_blank" rel="noopener">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
+            Live Demo
+          </a>
+        </div>
+      </article>
+    </div>
 
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-html5"></i>
-<h3>HTML5</h3>
-</div>
+    <p class="proj-group-label proj-group-label-2">Mobile Apps &amp; Other Builds</p>
+    <div class="projects-grid">
 
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-css3-alt"></i>
-<h3>CSS3</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">flutter</p>
+        <h3>Murugan Pilgrim Guide App</h3>
+        <p class="proj-sub">Pilgrimage Companion App <span class="proj-note">(built during Zoho internship)</span></p>
+        <p class="proj-desc">
+          A guide app supporting pilgrims with information and navigation for temple visits, built as part of
+          the Zoho Corporation internship. <em>Details to confirm — update with real feature set and stack.</em>
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Flutter</span><span class="chip">Dart</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/murugan_pilgrim_app" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-js"></i>
-<h3>JavaScript</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">flutter</p>
+        <h3>Flutter Timetable App</h3>
+        <p class="proj-sub">Class / Schedule Timetable App</p>
+        <p class="proj-desc">
+          A Flutter-based timetable application for organizing and viewing class schedules.
+          <em>Details to confirm — update with real feature set and stack.</em>
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Flutter</span><span class="chip">Dart</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/flutter_timetable_app" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-mobile-alt"></i>
-<h3>Flutter</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">flutter</p>
+        <h3>Meedicare</h3>
+        <p class="proj-sub">Medicine Reminder &amp; Tracker App</p>
+        <p class="proj-desc">
+          A Flutter-based healthcare app for managing medicine reminders and patient records, with Firebase
+          handling secure data storage.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/meedicare_flutter_app" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-database"></i>
-<h3>SQL</h3>
-</div>
+      <article class="project-card">
+        <p class="proj-tag">nlp</p>
+        <h3>Chatbot Application</h3>
+        <p class="proj-sub">NLP-Based Conversational Bot</p>
+        <p class="proj-desc">
+          An intelligent chatbot capable of responding to user queries using natural language processing techniques.
+        </p>
+        <div class="chip-row small">
+          <span class="chip">Python</span><span class="chip">NLP</span>
+        </div>
+        <div class="proj-links">
+          <a href="https://github.com/elananu/chatbot" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
+            Code
+          </a>
+        </div>
+      </article>
 
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-fire"></i>
-<h3>Firebase</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-brain"></i>
-<h3>Machine Learning</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-robot"></i>
-<h3>Artificial Intelligence</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-network-wired"></i>
-<h3>Deep Learning</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fas fa-code"></i>
-<h3>FastAPI</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-react"></i>
-<h3>React</h3>
-</div>
-
-<div class="card" data-aos="zoom-in">
-<i class="fab fa-github"></i>
-<h3>GitHub</h3>
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
-<!-- ==========================
-EXPERIENCE
-========================== -->
-
-<section id="experience">
-
-<h2 data-aos="fade-up">
-
-Experience
-
-</h2>
-
-<div class="timeline">
-
-<div class="timeline-card" data-aos="fade-right">
-
-<h3>Software Development Intern</h3>
-
-<h4>Zoho Corporation</h4>
-
-<p>
-
-Worked on enterprise applications,
-debugging, software enhancement,
-and performance optimization.
-
-</p>
-
-<span>Internship</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-left">
-
-<h3>Flutter Developer Intern</h3>
-
-<h4>AbserveTech Pvt Ltd</h4>
-
-<p>
-
-Developed a complete Flutter food
-ordering application integrated
-with Firebase backend.
-
-</p>
-
-<span>Internship</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-right">
-
-<h3>Machine Learning Intern</h3>
-
-<h4>Elysium Technologies</h4>
-
-<p>
-
-Built machine learning models,
-performed preprocessing,
-feature engineering,
-and model evaluation.
-
-</p>
-
-<span>Internship</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-left">
-
-<h3>Python Developer Intern</h3>
-
-<h4>Technohacks</h4>
-
-<p>
-
-Worked on automation,
-Python programming,
-and data analysis.
-
-</p>
-
-<span>Remote</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-right">
-
-<h3>Python Developer Intern</h3>
-
-<h4>CodSoft</h4>
-
-<p>
-
-Developed Python applications
-and completed programming tasks.
-
-</p>
-
-<span>Remote</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-left">
-
-<h3>Python Developer Intern</h3>
-
-<h4>InternPe</h4>
-
-<p>
-
-Worked on Python mini projects,
-improving coding and
-problem-solving skills.
-
-</p>
-
-<span>Remote</span>
-
-</div>
-
-</div>
-
-</section>
-<!-- ==========================
-PROJECTS
-========================== -->
-
-<section id="projects">
-
-<h2 data-aos="fade-up">
-My Projects
-</h2>
-
-<div class="projects">
-
-<!-- Project 1 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>AI Bug Tracker System</h3>
-
-<p>
-Developed an AI-powered bug tracking system with FastAPI,
-React, Machine Learning, SQLite and Gemini API for
-automatic bug severity prediction, duplicate detection,
-developer assignment and analytics dashboard.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>FastAPI</span>
-<span>React</span>
-<span>SQLite</span>
-<span>AI</span>
-</div>
-
-<a href="https://github.com/elananu" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 2 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Murugan Pilgrim App</h3>
-
-<p>
-Flutter application providing Murugan temple details,
-navigation, pooja timings,
-nearby hotels, emergency contacts,
-and multilingual support.
-</p>
-
-<div class="tech">
-<span>Flutter</span>
-<span>Dart</span>
-<span>Firebase</span>
-</div>
-
-<a href="https://github.com/elananu" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 3 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Medicare Reminder App</h3>
-
-<p>
-Healthcare mobile application for medicine reminders,
-appointments, patient records and secure authentication.
-</p>
-
-<div class="tech">
-<span>Flutter</span>
-<span>Firebase</span>
-<span>Dart</span>
-</div>
-
-<a href="https://github.com/elananu/meedicare_flutter_app" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 4 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Credit Card Fraud Detection</h3>
-
-<p>
-Machine Learning model to detect fraudulent transactions
-using anomaly detection,
-feature engineering and data preprocessing.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>Machine Learning</span>
-<span>Scikit-Learn</span>
-</div>
-
-<a href="https://github.com/elananu/financial-visualization-project" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 5 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>CT & MRI Image Fusion</h3>
-
-<p>
-Medical image fusion using Deep Learning techniques
-to combine CT and MRI images for improved diagnosis.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>OpenCV</span>
-<span>Deep Learning</span>
-</div>
-
-<a href="https://github.com/elananu/CT_MRI_Image_Fusion" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 6 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Image Augmentation</h3>
-
-<p>
-Implemented image augmentation using PyTorch
-to improve deep learning model accuracy and dataset diversity.
-</p>
-
-<div class="tech">
-<span>PyTorch</span>
-<span>Python</span>
-<span>Deep Learning</span>
-</div>
-
-<a href="https://github.com/elananu/image-augmentation-pytorch" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 7 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Agricultural Price Forecasting</h3>
-
-<p>
-AI-based crop price prediction system helping
-farmers estimate future market prices
-using Machine Learning algorithms.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>AI</span>
-<span>Machine Learning</span>
-</div>
-
-<a href="https://github.com/elananu" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 8 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Financial Data Visualization</h3>
-
-<p>
-Analyzed financial datasets using
-interactive visualizations and business analytics
-to support decision making.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>Matplotlib</span>
-<span>Pandas</span>
-</div>
-
-<a href="https://github.com/elananu/financial-visualization-project" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 9 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>AI Chatbot</h3>
-
-<p>
-Designed an intelligent chatbot capable
-of answering user queries using NLP,
-Machine Learning and Python.
-</p>
-
-<div class="tech">
-<span>Python</span>
-<span>NLP</span>
-<span>AI</span>
-</div>
-
-<a href="https://github.com/elananu/chatbot" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 10 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Personal Portfolio</h3>
-
-<p>
-Modern responsive portfolio website
-built using HTML, CSS and JavaScript
-with premium UI/UX animations.
-</p>
-
-<div class="tech">
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-</div>
-
-<a href="https://github.com/elananu/anusrii.github.io" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 11 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Flutter Timetable App</h3>
-
-<p>
-Developed a timetable management application
-for students with reminders,
-notifications and schedule management.
-</p>
-
-<div class="tech">
-<span>Flutter</span>
-<span>Firebase</span>
-<span>Dart</span>
-</div>
-
-<a href="https://github.com/elananu" target="_blank">
-View Project
-</a>
-
-</div>
-
-<!-- Project 12 -->
-
-<div class="project" data-aos="zoom-in">
-
-<h3>Leaf Disease Detection</h3>
-
-<p>
-Deep Learning model for identifying
-plant leaf diseases using YOLO and Computer Vision,
-helping farmers detect crop diseases early.
-</p>
-
-<div class="tech">
-<span>YOLO</span>
-<span>OpenCV</span>
-<span>Python</span>
-<span>Deep Learning</span>
-</div>
-
-<a href="https://github.com/elananu" target="_blank">
-View Project
-</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- ==========================
-EDUCATION
-========================== -->
-
-<section id="education">
-
-<h2 data-aos="fade-up">Education</h2>
-
-<div class="timeline">
-
-<div class="timeline-card" data-aos="fade-right">
-
-<h3>B.Tech - Artificial Intelligence & Data Science</h3>
-
-<h4>Ramco Institute of Technology</h4>
-
-<p>
-Currently pursuing B.Tech in Artificial Intelligence & Data Science with strong interest in AI,
-Machine Learning, Flutter Development and Full Stack Development.
-</p>
-
-<span>2023 - 2027</span>
-
-</div>
-
-<div class="timeline-card" data-aos="fade-left">
-
-<h3>Higher Secondary (HSC)</h3>
-
-<h4>Completed with Science Stream</h4>
-
-<p>
-Studied Mathematics, Physics, Chemistry and Computer Science.
-Built strong programming and analytical foundations.
-</p>
-
-<span>Completed</span>
-
-</div>
-
-</div>
-
+<!-- CERTIFICATIONS -->
+<section class="section alt" id="certifications" aria-label="Certifications">
+  <div class="section-inner">
+    <p class="label">Continuous Learning</p>
+    <h2 class="section-title">Certifications</h2>
+    <div class="cert-grid">
+      <span class="cert-chip">NPTEL Elite — Big Data Computing</span>
+      <span class="cert-chip">NPTEL — Natural Language Processing</span>
+      <span class="cert-chip">Microsoft — Introduction to Machine Learning</span>
+      <span class="cert-chip">Udemy — Artificial Intelligence</span>
+      <span class="cert-chip">HackerRank 5★ — Java</span>
+      <span class="cert-chip">HackerRank 5★ — Python</span>
+      <span class="cert-chip">HackerRank 5★ — SQL</span>
+      <span class="cert-chip">IBM — Python for Data Science</span>
+      <span class="cert-chip">Google — Introduction to Generative AI</span>
+      <span class="cert-chip">Google — Foundations of Cybersecurity</span>
+      <span class="cert-chip">Cisco — Python Essentials 1</span>
+      <span class="cert-chip">Cisco — Python Essentials 2</span>
+      <span class="cert-chip">Cisco — Introduction to Cybersecurity</span>
+      <span class="cert-chip">Cisco — Introduction to Data Science</span>
+      <span class="cert-chip">Cisco — Operating System Basics</span>
+      <span class="cert-chip">Udemy — OS: File System &amp; Threads</span>
+      <span class="cert-chip">HP Foundation — Data Science &amp; Analytics</span>
+      <span class="cert-chip">IUCEE — Overview of Emerging Technologies</span>
+      <span class="cert-chip">GUVI — Python Programming</span>
+    </div>
+  </div>
 </section>
 
-<!-- ==========================
-CERTIFICATIONS
-========================== -->
-
-<section id="certifications">
-
-<h2 data-aos="fade-up">Certifications</h2>
-
-<div class="certifications">
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-award"></i>
-<h3>Data Science & Analytics</h3>
-<p>HP Foundation</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fab fa-python"></i>
-<h3>Python for Data Science</h3>
-<p>IBM</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-robot"></i>
-<h3>Introduction to Generative AI</h3>
-<p>Google</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-shield-alt"></i>
-<h3>Cybersecurity Foundations</h3>
-<p>Google</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-code"></i>
-<h3>Python Programming</h3>
-<p>GUVI</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fab fa-python"></i>
-<h3>Python Essentials 1 & 2</h3>
-<p>Cisco Networking Academy</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-brain"></i>
-<h3>Machine Learning</h3>
-<p>Microsoft</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-laptop-code"></i>
-<h3>Artificial Intelligence</h3>
-<p>Udemy</p>
-</div>
-
-<div class="cert-card" data-aos="zoom-in">
-<i class="fas fa-database"></i>
-<h3>Big Data Computing</h3>
-<p>NPTEL</p>
-</div>
-
-</div>
-
+<!-- CONTACT -->
+<section class="section" id="contact" aria-label="Contact">
+  <div class="section-inner">
+    <p class="label">Let's Talk</p>
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <a class="contact-item" href="mailto:anusriie@gmail.com">
+          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
+          <span><span class="c-label">Email</span>anusriie@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+918148301409">
+          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg></span>
+          <span><span class="c-label">Phone</span>+91 81483 01409</span>
+        </a>
+        <a class="contact-item" href="https://github.com/elananu" target="_blank" rel="noopener">
+          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg></span>
+          <span><span class="c-label">GitHub</span>github.com/elananu</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/anu-srii-707a2b28a" target="_blank" rel="noopener">
+          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3zM9 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.34h-4v-5.62c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.72H9z"/></svg></span>
+          <span><span class="c-label">LinkedIn</span>anu-srii-707a2b28a</span>
+        </a>
+      </div>
+    </div>
 </section>
 
-<!-- ==========================
-ACHIEVEMENTS
-========================== -->
-
-<section id="achievements">
-
-<h2 data-aos="fade-up">Achievements</h2>
-
-<div class="projects">
-
-<div class="project" data-aos="zoom-in">
-
-<h3>6+ Internships</h3>
-
-<p>
-Completed internships in Software Development,
-Flutter Development,
-Machine Learning,
-and Python Development from reputed companies.
-</p>
-
-</div>
-
-<div class="project" data-aos="zoom-in">
-
-<h3>12+ Projects</h3>
-
-<p>
-Built AI, Machine Learning,
-Flutter,
-Healthcare,
-Agriculture,
-Financial Analytics,
-and Web Development projects.
-</p>
-
-</div>
-
-<div class="project" data-aos="zoom-in">
-
-<h3>18+ Certifications</h3>
-
-<p>
-Earned certifications from
-Google,
-Microsoft,
-IBM,
-Cisco,
-HP,
-GUVI,
-Udemy,
-and NPTEL.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================
-CODING PROFILES
-========================== -->
-
-<section id="profiles">
-
-<h2 data-aos="fade-up">
-
-Coding Profiles
-
-</h2>
-
-<div class="skills">
-
-<div class="card" data-aos="flip-left">
-
-<i class="fab fa-github"></i>
-
-<h3>GitHub</h3>
-
-<p>@elananu</p>
-
-<a href="https://github.com/elananu" target="_blank">
-
-Visit
-
-</a>
-
-</div>
-
-<div class="card" data-aos="flip-left">
-
-<i class="fab fa-linkedin"></i>
-
-<h3>LinkedIn</h3>
-
-<p>Anusrii E</p>
-
-<a href="https://linkedin.com/in/anu-srii" target="_blank">
-
-Visit
-
-</a>
-
-</div>
-
-<div class="card" data-aos="flip-left">
-
-<i class="fas fa-code"></i>
-
-<h3>HackerRank</h3>
-
-<p>5★ Python, Java & SQL</p>
-
-<a href="#" target="_blank">
-
-Visit
-
-</a>
-
-</div>
-
-<div class="card" data-aos="flip-left">
-
-<i class="fas fa-laptop-code"></i>
-
-<h3>LeetCode</h3>
-
-<p>Problem Solving Practice</p>
-
-<a href="#" target="_blank">
-
-Visit
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-<!-- ==========================
-CONTACT
-========================== -->
-
-<section id="contact">
-
-<h2 data-aos="fade-up">
-
-Get In Touch
-
-</h2>
-
-<div class="contact-container">
-
-<div class="contact-info">
-
-<div class="contact-box" data-aos="fade-right">
-
-<i class="fas fa-envelope"></i>
-
-<div>
-
-<h4>Email</h4>
-
-<p>
-
-anusriie@gmail.com
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-box" data-aos="fade-right">
-
-<i class="fas fa-phone"></i>
-
-<div>
-
-<h4>Phone</h4>
-
-<p>
-
-+91 8148301409
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-box" data-aos="fade-right">
-
-<i class="fas fa-map-marker-alt"></i>
-
-<div>
-
-<h4>Location</h4>
-
-<p>
-
-Theni,Tamil Nadu, India
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-box" data-aos="fade-right">
-
-<i class="fab fa-github"></i>
-
-<div>
-
-<h4>GitHub</h4>
-
-<p>
-
-github.com/elananu
-
-</p>
-
-</div>
-
-</div>
-
-<div class="contact-box" data-aos="fade-right">
-
-<i class="fab fa-linkedin"></i>
-
-<div>
-
-<h4>LinkedIn</h4>
-
-<p>
-
-linkedin.com/in/anu-srii
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- Contact Form -->
-
-<form class="contact-form" data-aos="fade-left">
-
-<input
-type="text"
-placeholder="Your Name"
-required>
-
-<input
-type="email"
-placeholder="Your Email"
-required>
-
-<input
-type="text"
-placeholder="Subject"
-required>
-
-<textarea
-placeholder="Write your message..."
-required></textarea>
-
-<button type="submit">
-
-Send Message
-
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- ==========================
-FOOTER
-========================== -->
+</main>
 
 <footer>
-
-<div>
-
-<h2>
-
-Anusrii<span>.E</span>
-
-</h2>
-
-<p>
-
-Artificial Intelligence &
-Data Science Engineer
-
-</p>
-
-</div>
-
-<div class="footer-social">
-
-<a href="https://github.com/elananu" target="_blank">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-<a href="https://linkedin.com/in/anu-srii" target="_blank">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-<a href="mailto:anusriie@gmail.com">
-
-<i class="fas fa-envelope"></i>
-
-</a>
-
-<a href="tel:+918148301409">
-
-<i class="fas fa-phone"></i>
-
-</a>
-
-</div>
-
+  <p>© 2026 <span>Anusrii E</span> — built end-to-end, like everything else here.</p>
 </footer>
 
-<!-- Copyright -->
-
-<div
-style="text-align:center;
-padding:25px;
-background:#070b16;
-color:#aaa;">
-
-© 2026 Anusrii E. All Rights Reserved.
-
-Designed & Developed by
-
-<b style="color:#F5C542;">
-
-Anusrii E
-
-</b>
-
-</div>
-
-<!-- ==========================
-AOS Library
-========================== -->
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-
-<script>
-
-AOS.init({
-
-duration:1000,
-
-once:true,
-
-offset:120
-
-});
-
-</script>
-
-<!-- Main JS -->
-
 <script src="script.js"></script>
-
 </body>
-
 </html>
