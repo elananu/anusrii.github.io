@@ -1,22 +1,251 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anusrii E — Software Developer &amp; AI/ML Engineer</title>
-<meta name="description" content="Portfolio of Anusrii E — Final-year B.Tech AI &amp; Data Science student building full-stack and ML systems: MedRoute, Agri-AI, AI Bug Tracker, CourierTrack Pro, FinGuard-AI, AgriPrice Forecasting.">
+<title>Anusrii E — Software Developer & AI/ML Engineer</title>
+<meta name="description" content="Portfolio of Anusrii E — Software Developer and AI & Data Science engineer building full-stack, AI/ML, data and Flutter applications.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+<style>
+/* =========================
+   PORTFOLIO POLISH
+   ========================= */
+:root{
+  --bg:#07100c;
+  --panel:#0c1711;
+  --panel2:#101d15;
+  --line:rgba(155,226,189,.14);
+  --text:#f2f7f3;
+  --muted:#9aaba1;
+  --mint:#9be2bd;
+  --mint2:#62c895;
+  --mint3:#d5f7e4;
+  --shadow:0 24px 70px rgba(0,0,0,.28);
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text)}
+::selection{background:rgba(155,226,189,.25);color:#fff}
+
+/* Navigation */
+#navbar{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  backdrop-filter:blur(18px);
+  -webkit-backdrop-filter:blur(18px);
+  background:rgba(7,16,12,.78);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{min-height:72px}
+.nav-links a{text-transform:uppercase;letter-spacing:.08em;font-size:.74rem}
+.logo{letter-spacing:-.03em}
+
+/* Hero */
+.hero{
+  position:relative;
+  overflow:hidden;
+  min-height:calc(100vh - 72px);
+  display:flex;
+  align-items:center;
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  width:620px;height:620px;
+  right:-180px;top:-160px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(98,200,149,.16),transparent 68%);
+  pointer-events:none;
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  width:420px;height:420px;
+  left:-220px;bottom:-240px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(155,226,189,.08),transparent 68%);
+  pointer-events:none;
+}
+.hero-inner{position:relative;z-index:1}
+.eyebrow{color:var(--mint);letter-spacing:.14em;text-transform:uppercase}
+.hero h1{
+  font-size:clamp(4rem,10vw,8.5rem);
+  line-height:.9;
+  letter-spacing:-.075em;
+  margin:14px 0 24px;
+}
+.hero-role{font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600}
+.hero-desc{max-width:720px;color:#b9c8bf;line-height:1.85}
+
+/* Buttons */
+.btn-primary,.btn-outline{
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease;
+}
+.btn-primary:hover,.btn-outline:hover{transform:translateY(-3px)}
+
+/* Sections */
+.section{position:relative}
+.section-title{letter-spacing:-.055em}
+.section-title span{color:var(--mint)}
+
+/* Skill chips */
+.chip{
+  border-color:rgba(155,226,189,.15)!important;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease;
+}
+.chip:hover{
+  transform:translateY(-2px);
+  border-color:rgba(155,226,189,.42)!important;
+  background:rgba(155,226,189,.08)!important;
+}
+
+/* Experience cards */
+.timeline-card{
+  border:1px solid var(--line);
+  background:linear-gradient(145deg,rgba(16,29,21,.9),rgba(10,20,15,.92));
+  box-shadow:0 16px 50px rgba(0,0,0,.16);
+}
+.timeline-card:hover{
+  border-color:rgba(155,226,189,.3);
+  transform:translateY(-2px);
+  transition:.25s ease;
+}
+
+/* Projects */
+#projects .section-title{
+  font-size:clamp(2.5rem,5vw,4rem);
+}
+.project-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid rgba(155,226,189,.12);
+  background:linear-gradient(150deg,#0d1912,#0a130e);
+  box-shadow:0 18px 55px rgba(0,0,0,.18);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.project-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(155,226,189,.34);
+  box-shadow:0 28px 70px rgba(0,0,0,.3);
+}
+.project-image{
+  width:100%;
+  height:210px;
+  margin:0 0 24px;
+  overflow:hidden;
+  border-radius:14px;
+  border:1px solid rgba(155,226,189,.14);
+  background:#0b120e;
+}
+.project-image img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .45s ease,filter .45s ease;
+}
+.project-card:hover .project-image img{
+  transform:scale(1.055);
+  filter:saturate(1.06);
+}
+.project-card h3{letter-spacing:-.025em}
+.proj-tag{color:var(--mint)!important}
+.proj-links a{transition:transform .2s ease,color .2s ease}
+.proj-links a:hover{transform:translateX(3px);color:var(--mint)!important}
+
+/* Special Agri-AI image */
+.project-card:first-child .project-image{
+  border-color:rgba(155,226,189,.28);
+  box-shadow:inset 0 0 0 1px rgba(155,226,189,.04);
+}
+
+/* Certifications */
+.cert-chip{
+  transition:transform .18s ease,border-color .18s ease;
+}
+.cert-chip:hover{
+  transform:translateY(-2px);
+  border-color:rgba(155,226,189,.4)!important;
+}
+
+/* Contact */
+.contact-wrapper{
+  display:grid;
+  grid-template-columns:minmax(280px,.8fr) minmax(360px,1.2fr);
+  gap:70px;
+  align-items:start;
+}
+.contact-form{display:flex;flex-direction:column;gap:10px}
+.contact-form label{
+  margin-top:10px;
+  font-family:"IBM Plex Mono",monospace;
+  font-size:.76rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:#bfd0c6;
+}
+.contact-form input,.contact-form textarea{
+  width:100%;
+  box-sizing:border-box;
+  border:1px solid rgba(155,226,189,.22);
+  border-radius:14px;
+  background:#0c1510;
+  color:#f4f4f4;
+  padding:16px 18px;
+  font:inherit;
+  outline:none;
+  transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.contact-form input:focus,.contact-form textarea:focus{
+  border-color:var(--mint);
+  background:#0e1a13;
+  box-shadow:0 0 0 4px rgba(155,226,189,.08);
+}
+.contact-form textarea{resize:vertical;min-height:145px}
+.contact-submit{
+  margin-top:16px;
+  border:0;
+  border-radius:30px;
+  padding:16px 24px;
+  background:linear-gradient(90deg,#78c99d,#b0efd0);
+  color:#06100a;
+  font:700 1rem "Inter",sans-serif;
+  cursor:pointer;
+  box-shadow:0 14px 32px rgba(120,201,157,.18);
+  transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease;
+}
+.contact-submit:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(120,201,157,.25)}
+.contact-submit:disabled{opacity:.65;cursor:wait;transform:none}
+.contact-note{margin:8px 0 0;text-align:center;opacity:.65;font-size:.82rem}
+.contact-item{transition:transform .2s ease,color .2s ease}
+.contact-item:hover{transform:translateX(4px);color:var(--mint)!important}
+
+/* Footer */
+footer{border-top:1px solid var(--line);background:#060d09}
+footer span{color:var(--mint)}
+
+/* Mobile */
+@media(max-width:800px){
+  .hero{min-height:auto;padding:100px 0 90px}
+  .hero h1{font-size:clamp(3.5rem,17vw,6rem)}
+  .contact-wrapper{grid-template-columns:1fr;gap:40px}
+  .project-image{height:180px}
+}
+</style>
+</head>
+
+<body>
 <a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV -->
 <nav id="navbar">
   <div class="nav-inner">
-    <a href="#top" class="logo">AE<span class="logo-dot">.</span></a>
+    <a href="#top" class="logo">Anusrii Elanthiraiyan</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#stack">Stack</a></li>
@@ -33,17 +262,18 @@
 
 <main id="main">
 
-<!-- HERO -->
 <section class="hero" id="top" aria-label="Introduction">
   <div class="hero-inner">
     <div class="hero-text" id="about">
-      <p class="eyebrow">// final-year b.tech · ai &amp; data science</p>
+      <p class="eyebrow">// final-year b.tech · ai & data science</p>
       <h1>Anusrii&nbsp;E</h1>
       <p class="hero-role">Software Developer <span class="sep">·</span> AI/ML Engineer <span class="sep">·</span> Flutter Developer</p>
       <p class="hero-desc">
-        I build systems that move things where they need to go — medicine to patients, packages to doors,
-        signals to predictions. Full-stack engineer with hands-on machine learning experience, from
-        model training to production deployment.
+         AI & Data Science engineer focused on building intelligent, scalable digital solutions.
+Skilled in AI/ML, full-stack development, Flutter, Python, React, and FastAPI.
+Experienced in transforming ideas into practical applications from concept to deployment.
+Passionate about solving real-world problems through innovative technology and clean engineering.
+
       </p>
       <div class="hero-btns">
         <a href="./AnusriiE_Resume.pdf" class="btn-primary" download>
@@ -52,403 +282,155 @@
         </a>
         <a href="#projects" class="btn-outline">View Projects</a>
       </div>
-      <div class="hero-stats" role="list">
-        <div class="stat"><span class="stat-num">10</span><span class="stat-label">Public Repos</span></div>
-        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Internships</span></div>
-        <div class="stat"><span class="stat-num">8.27</span><span class="stat-label">CGPA / 10</span></div>
-      </div>
-    </div>
-
-    <div class="hero-graph" aria-hidden="true">
-      <svg viewBox="0 0 700 700" class="graph-svg">
-        <g class="graph-edges">
-          <path class="edge" d="M350,350 L610,350" />
-          <path class="edge" d="M350,350 L480,575" />
-          <path class="edge" d="M350,350 L220,575" />
-          <path class="edge" d="M350,350 L90,350" />
-          <path class="edge" d="M350,350 L220,125" />
-          <path class="edge" d="M350,350 L480,125" />
-        </g>
-        <g class="graph-pulses">
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L610,350'); animation-delay:0s" />
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L480,575'); animation-delay:0.5s" />
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L220,575'); animation-delay:1s" />
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L90,350'); animation-delay:1.5s" />
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L220,125'); animation-delay:2s" />
-          <circle class="pulse" r="4" style="offset-path:path('M350,350 L480,125'); animation-delay:2.5s" />
-        </g>
-        <g class="graph-nodes">
-          <g class="node node-center" transform="translate(350,350)">
-            <circle r="34" />
-            <text y="5">AE</text>
-          </g>
-          <g class="node" transform="translate(610,350)">
-            <circle r="20" />
-            <text y="-30">Agri-AI</text>
-          </g>
-          <g class="node" transform="translate(480,575)">
-            <circle r="20" />
-            <text y="34">FinGuard-AI</text>
-          </g>
-          <g class="node" transform="translate(220,575)">
-            <circle r="20" />
-            <text y="34">AgriPrice</text>
-          </g>
-          <g class="node" transform="translate(90,350)">
-            <circle r="20" />
-            <text y="-30">Fin. Viz</text>
-          </g>
-          <g class="node" transform="translate(220,125)">
-            <circle r="20" />
-            <text y="-30">CT-MRI Fusion</text>
-          </g>
-          <g class="node" transform="translate(480,125)">
-            <circle r="20" />
-            <text y="-30">Img Augment</text>
-          </g>
-        </g>
-      </svg>
     </div>
   </div>
 </section>
 
-<!-- STACK -->
 <section class="section" id="stack" aria-label="Technical skills">
   <div class="section-inner">
-    <p class="label">What I Work With</p>
-    <h2 class="section-title">Technical <span>Stack</span></h2>
+
+    <p class="label">The Blend</p>
+
+    <h2 class="section-title">
+      Technical <span>Skills</span>
+    </h2>
+
+    <p class="section-desc">
+      A working palette of languages, frameworks and tools — blended for
+      building and shipping real AI systems.
+    </p>
 
     <div class="stack-grid">
+
       <div class="stack-group">
         <p class="stack-cat">Languages</p>
         <div class="chip-row">
-          <span class="chip">Python</span><span class="chip">Java</span><span class="chip">Dart</span><span class="chip">SQL</span><span class="chip">JavaScript</span>
+          <span class="chip">Python</span>
+          <span class="chip">Java</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Dart</span>
+          <span class="chip">JavaScript</span>
         </div>
       </div>
+
       <div class="stack-group">
-        <p class="stack-cat">Full-Stack &amp; Backend</p>
+        <p class="stack-cat">AI / Machine Learning</p>
         <div class="chip-row">
-          <span class="chip">FastAPI</span><span class="chip">Flask</span><span class="chip">React / Vite</span><span class="chip">REST APIs</span><span class="chip">Flutter</span><span class="chip">JWT Auth</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Deep Learning</span>
+          <span class="chip">Data Science</span>
+          <span class="chip">Scikit-learn</span>
+          <span class="chip">PyTorch</span>
+          <span class="chip">TensorFlow</span>
+          <span class="chip">YOLOv8</span>
+          <span class="chip">NLP</span>
+          <span class="chip">Computer Vision</span>
         </div>
       </div>
+
       <div class="stack-group">
-        <p class="stack-cat">AI / ML</p>
+        <p class="stack-cat">Development</p>
         <div class="chip-row">
-          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span><span class="chip">Scikit-learn</span><span class="chip">YOLOv8</span><span class="chip">NLP</span><span class="chip">Computer Vision</span>
+          <span class="chip">React</span>
+          <span class="chip">FastAPI</span>
+          <span class="chip">Flask</span>
+          <span class="chip">REST APIs</span>
+          <span class="chip">Flutter</span>
         </div>
       </div>
+
       <div class="stack-group">
-        <p class="stack-cat">Data &amp; Storage</p>
+        <p class="stack-cat">Data & Storage</p>
         <div class="chip-row">
-          <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">MongoDB</span><span class="chip">SQLAlchemy</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+          <span class="chip">PostgreSQL</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">Pandas</span>
+          <span class="chip">NumPy</span>
         </div>
       </div>
+
       <div class="stack-group">
-        <p class="stack-cat">Deploy &amp; Tools</p>
+        <p class="stack-cat">Tools & Deployment</p>
         <div class="chip-row">
-          <span class="chip">Render</span><span class="chip">Vercel</span><span class="chip">Hugging Face Spaces</span><span class="chip">Git / GitHub</span><span class="chip">VS Code</span><span class="chip">Android Studio</span>
+          <span class="chip">Git & GitHub</span>
+          <span class="chip">Docker</span>
+          <span class="chip">Vercel</span>
+          <span class="chip">Render</span>
+          <span class="chip">Hugging Face Spaces</span>
+          <span class="chip">VS Code</span>
+          <span class="chip">Android Studio</span>
         </div>
       </div>
+
+      <div class="stack-group">
+        <p class="stack-cat">Analytics & BI</p>
+        <div class="chip-row">
+          <span class="chip">Power BI</span>
+          <span class="chip">Matplotlib</span>
+          <span class="chip">Plotly</span>
+          <span class="chip">Streamlit</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- EXPERIENCE -->
 <section class="section alt" id="experience" aria-label="Work experience">
   <div class="section-inner">
     <p class="label">Where I've Worked</p>
     <h2 class="section-title">Experience</h2>
-
     <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="tc-header">
-            <div>
-              <h3>Software Development Intern</h3>
-              <p class="company">Zoho Corporation <span class="tc-loc">· Madurai</span></p>
-            </div>
-            <span class="badge">Jan 2026 – Mar 2026</span>
-          </div>
-          <p>Built end-to-end features for the Murugan Pilgrim Guide App and Medicare App — from spec through implementation, debugging, and release across the full SDLC.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="tc-header">
-            <div>
-              <h3>Flutter Development Intern</h3>
-              <p class="company">MarqwonDynamics <span class="tc-loc">· Remote</span></p>
-            </div>
-            <span class="badge">May 2026 – Jun 2026</span>
-          </div>
-          <p>Built ML-driven forecasting models for an agricultural price prediction platform, translating raw time-series data into usable market intelligence.</p>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-card">
-          <div class="tc-header">
-            <div>
-              <h3>Machine Learning Intern</h3>
-              <p class="company">Elysium Technologies Pvt. Ltd. <span class="tc-loc">· Madurai</span></p>
-            </div>
-            <span class="badge">Feb 2025 – Mar 2025</span>
-          </div>
-          <p>Applied ML algorithms to a real-world classification/prediction task, covering preprocessing, feature engineering, model training, and evaluation.</p>
-        </div>
-      </div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="tc-header"><div><h3>Software Development Intern</h3><p class="company">Zoho Corporation <span class="tc-loc">· Madurai</span></p></div><span class="badge">Jan 2026 – Mar 2026</span></div><p>Built end-to-end features for the Murugan Pilgrim Guide App and Medicare App — from implementation and debugging through application delivery.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="tc-header"><div><h3>Flutter Development Intern</h3><p class="company">MarqwonDynamics <span class="tc-loc">· Remote</span></p></div><span class="badge">May 2026 – Jun 2026</span></div><p>Worked on an agricultural price prediction platform, translating time-series data into forecasting features and application-ready insights.</p></div></div>
+      <div class="timeline-item"><div class="timeline-dot"></div><div class="timeline-card"><div class="tc-header"><div><h3>Machine Learning Intern</h3><p class="company">Elysium Technologies Pvt. Ltd. <span class="tc-loc">· Madurai</span></p></div><span class="badge">Feb 2025 – Mar 2025</span></div><p>Applied machine learning workflows covering preprocessing, feature engineering, model training and evaluation for a classification/prediction task.</p></div></div>
     </div>
-
-    <div class="also-worked">
-      <p class="stack-cat">Also Completed Short-Term Programs With</p>
-      <div class="chip-row">
-        <span class="chip chip-quiet">AbserveTech — Flutter Dev Intern</span>
-        <span class="chip chip-quiet">TechnoHacks — Python Dev Intern</span>
-        <span class="chip chip-quiet">CodSoft — Python Dev Intern</span>
-        <span class="chip chip-quiet">InternPe — Python Dev Intern</span>
-      </div>
-    </div>
+    <div class="also-worked"><p class="stack-cat">Also Completed Short-Term Programs With</p><div class="chip-row"><span class="chip chip-quiet">AbserveTech — Flutter Dev Intern</span><span class="chip chip-quiet">TechnoHacks — Python Dev Intern</span><span class="chip chip-quiet">CodSoft — Python Dev Intern</span><span class="chip chip-quiet">InternPe — Python Dev Intern</span></div></div>
   </div>
 </section>
 
-<!-- PROJECTS -->
 <section class="section" id="projects" aria-label="Projects">
   <div class="section-inner">
     <p class="label">What I've Built</p>
     <h2 class="section-title">Selected <span>Projects</span></h2>
 
-    <p class="proj-group-label">AI / ML &amp; Data</p>
+    <p class="proj-group-label">AI / ML & Data</p>
     <div class="projects-grid">
 
       <article class="project-card">
+        <div class="project-image"><img src="images/plantdisease.png" alt="Agri-AI Plant Disease Detection" loading="lazy"></div>
         <p class="proj-tag">computer vision</p>
         <h3>Agri-AI</h3>
         <p class="proj-sub">AI-Based Crop Disease Detection</p>
-        <p class="proj-desc">
-          Trained a YOLOv8 object detection model on the PlantDoc dataset across 29 disease classes to identify
-          crop diseases from leaf images. Deployed via FastAPI on Render with a React/Vite frontend on Vercel,
-          using the Anthropic API to generate plain-language disease explanations.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">YOLOv8</span><span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Computer Vision</span>
-        </div>
+        <p class="proj-desc">Trained a YOLOv8 object detection model on the PlantDoc dataset across 29 disease classes to identify crop diseases from leaf images. Deployed via FastAPI with a React/Vite frontend and an AI-generated plain-language explanation layer.</p>
+        <div class="chip-row small"><span class="chip">YOLOv8</span><span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Computer Vision</span></div>
         <div class="proj-links">
-          <a href="https://github.com/elananu/agri-ai-project-complete" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://agri-ai-project-complete.vercel.app/" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
+          <a href="https://github.com/elananu/agri-ai-project-complete" target="_blank" rel="noopener">Code ↗</a>
+          <a href="https://agri-ai-project-complete.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a>
         </div>
       </article>
 
-      <article class="project-card">
-        <p class="proj-tag">anomaly detection</p>
-        <h3>FinGuard-AI</h3>
-        <p class="proj-sub">Financial Fraud Detection &amp; Risk Analytics Dashboard</p>
-        <p class="proj-desc">
-          An interactive transaction analysis platform where users upload financial datasets as CSV, visualize
-          transaction statistics and risk patterns, and flag potentially suspicious activity via ML-based
-          anomaly detection — with results exportable for further review.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Scikit-learn</span><span class="chip">Plotly</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/FinGuard-AI" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://elananu-finguard-ai-app-subabr.streamlit.app/" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </article>
+      <article class="project-card"><div class="project-image"><img src="images/fingaurdai.png" alt="FinGuard-AI project preview" loading="lazy"></div><p class="proj-tag">anomaly detection</p><h3>FinGuard-AI</h3><p class="proj-sub">Financial Fraud Detection & Risk Analytics Dashboard</p><p class="proj-desc">An interactive transaction analysis platform where users upload financial datasets, visualize transaction statistics and risk patterns, and flag potentially suspicious activity using ML-based anomaly detection.</p><div class="chip-row small"><span class="chip">Python</span><span class="chip">Streamlit</span><span class="chip">Scikit-learn</span><span class="chip">Plotly</span></div><div class="proj-links"><a href="https://github.com/elananu/FinGuard-AI" target="_blank" rel="noopener">Code ↗</a><a href="https://elananu-finguard-ai-app-subabr.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a></div></article>
 
-      <article class="project-card">
-        <p class="proj-tag">forecasting</p>
-        <h3>AgriPrice Forecasting</h3>
-        <p class="proj-sub">Agricultural Price Prediction Platform</p>
-        <p class="proj-desc">
-          A full-stack forecasting application with a Recharts-based dashboard supporting forecast tabs, CSV
-          upload, and data export. Backend deployed on Hugging Face Spaces, with scheduling and free-tier
-          sleep/wake issues resolved to keep forecasts running reliably.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Recharts</span><span class="chip">Hugging Face Spaces</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/agriprice-forecasting" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://agriprice-forecasting.vercel.app/" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </article>
+      <article class="project-card"><div class="project-image"><img src="images/agriforecasting.png" alt="AgriPrice Forecasting project preview" loading="lazy"></div><p class="proj-tag">forecasting</p><h3>AgriPrice Forecasting</h3><p class="proj-sub">Agricultural Price Prediction Platform</p><p class="proj-desc">A full-stack forecasting application with a Recharts-based dashboard supporting forecast views, CSV upload and data export. Backend deployed on Hugging Face Spaces.</p><div class="chip-row small"><span class="chip">FastAPI</span><span class="chip">React/Vite</span><span class="chip">Recharts</span><span class="chip">Hugging Face</span></div><div class="proj-links"><a href="https://github.com/elananu/agriprice-forecasting" target="_blank" rel="noopener">Code ↗</a><a href="https://agriprice-forecasting.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a></div></article>
 
-      <article class="project-card">
-        <p class="proj-tag">data visualization</p>
-        <h3>Financial Data Visualization</h3>
-        <p class="proj-sub">Financial Charting &amp; Analysis Tool</p>
-        <p class="proj-desc">
-          Analyzed and visualized financial datasets using charts and graphs to support data-driven decision-making,
-          covering trend analysis and exploratory data analysis (EDA) workflows.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">Matplotlib</span><span class="chip">Data Analysis</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/financial-visualization-project" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://elananu-financial-visualization-project-app-wyt3ui.streamlit.app//" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </article>
+      <article class="project-card"><div class="project-image"><img src="images/financialdatavisual.png" alt="Financial Data Visualization project preview" loading="lazy"></div><p class="proj-tag">data visualization</p><h3>Financial Data Visualization</h3><p class="proj-sub">Financial Charting & Analysis Tool</p><p class="proj-desc">Analyzed and visualized financial datasets using charts and graphs to support trend analysis and exploratory data analysis workflows.</p><div class="chip-row small"><span class="chip">Python</span><span class="chip">Matplotlib</span><span class="chip">Data Analysis</span></div><div class="proj-links"><a href="https://github.com/elananu/financial-visualization-project" target="_blank" rel="noopener">Code ↗</a><a href="https://elananu-financial-visualization-project-app-wyt3ui.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a></div></article>
 
-      <article class="project-card">
-        <p class="proj-tag">medical imaging</p>
-        <h3>CT &amp; MRI Image Fusion</h3>
-        <p class="proj-sub">Multi-Modal Medical Image Fusion</p>
-        <p class="proj-desc">
-          Built an image fusion system combining CT and MRI scans into a single composite image to improve
-          medical image analysis and diagnostic detail.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">Deep Learning</span><span class="chip">Image Processing</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/CT_MRI_Image_Fusion" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://elananu-ct-mri-image-fusion-app-5qhud7.streamlit.app//" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </article>
+      <article class="project-card"><div class="project-image"><img src="images/imagefusion.png" alt="CT and MRI Image Fusion project preview" loading="lazy"></div><p class="proj-tag">medical imaging</p><h3>CT & MRI Image Fusion</h3><p class="proj-sub">Multi-Modal Medical Image Fusion</p><p class="proj-desc">Built an image fusion system combining CT and MRI scans into a single composite image to support medical image analysis.</p><div class="chip-row small"><span class="chip">Python</span><span class="chip">Deep Learning</span><span class="chip">Image Processing</span></div><div class="proj-links"><a href="https://github.com/elananu/CT_MRI_Image_Fusion" target="_blank" rel="noopener">Code ↗</a><a href="https://elananu-ct-mri-image-fusion-app-5qhud7.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a></div></article>
 
-      <article class="project-card">
-        <p class="proj-tag">deep learning</p>
-        <h3>Image Augmentation (PyTorch)</h3>
-        <p class="proj-sub">Data Augmentation Pipeline for Deep Learning</p>
-        <p class="proj-desc">
-          Implemented a set of image augmentation techniques in PyTorch to improve dataset diversity and
-          reduce overfitting when training deep learning models.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Deep Learning</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/image-augmentation-pytorch" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-          <a href="https://elananu-image-augmentation-pytorch-app-mzg5or.streamlit.app/" target="_blank" rel="noopener">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><path d="M15 3h6v6M10 14L21 3"/></svg>
-            Live Demo
-          </a>
-        </div>
-      </article>
+      <article class="project-card"><div class="project-image"><img src="images/augmentation.png" alt="Image Augmentation project preview" loading="lazy"></div><p class="proj-tag">deep learning</p><h3>Image Augmentation (PyTorch)</h3><p class="proj-sub">Data Augmentation Pipeline for Deep Learning</p><p class="proj-desc">Implemented image augmentation techniques in PyTorch to improve dataset diversity and reduce overfitting during deep learning training.</p><div class="chip-row small"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">Deep Learning</span></div><div class="proj-links"><a href="https://github.com/elananu/image-augmentation-pytorch" target="_blank" rel="noopener">Code ↗</a><a href="https://elananu-image-augmentation-pytorch-app-mzg5or.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a></div></article>
     </div>
 
-    <p class="proj-group-label proj-group-label-2">Mobile Apps &amp; Other Builds</p>
+    <p class="proj-group-label proj-group-label-2">Mobile Apps & Other Builds</p>
     <div class="projects-grid">
-
-      <article class="project-card">
-        <p class="proj-tag">flutter</p>
-        <h3>Murugan Pilgrim Guide App</h3>
-        <p class="proj-sub">Pilgrimage Companion App <span class="proj-note">(built during Zoho internship)</span></p>
-        <p class="proj-desc">
-          A guide app supporting pilgrims with information and navigation for temple visits, built as part of
-          the Zoho Corporation internship. <em>Details to confirm — update with real feature set and stack.</em>
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Flutter</span><span class="chip">Dart</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/murugan_pilgrim_app" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="proj-tag">flutter</p>
-        <h3>Flutter Timetable App</h3>
-        <p class="proj-sub">Class / Schedule Timetable App</p>
-        <p class="proj-desc">
-          A Flutter-based timetable application for organizing and viewing class schedules.
-          <em>Details to confirm — update with real feature set and stack.</em>
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Flutter</span><span class="chip">Dart</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/flutter_timetable_app" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="proj-tag">flutter</p>
-        <h3>Meedicare</h3>
-        <p class="proj-sub">Medicine Reminder &amp; Tracker App</p>
-        <p class="proj-desc">
-          A Flutter-based healthcare app for managing medicine reminders and patient records, with Firebase
-          handling secure data storage.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/meedicare_flutter_app" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <p class="proj-tag">nlp</p>
-        <h3>Chatbot Application</h3>
-        <p class="proj-sub">NLP-Based Conversational Bot</p>
-        <p class="proj-desc">
-          An intelligent chatbot capable of responding to user queries using natural language processing techniques.
-        </p>
-        <div class="chip-row small">
-          <span class="chip">Python</span><span class="chip">NLP</span>
-        </div>
-        <div class="proj-links">
-          <a href="https://github.com/elananu/chatbot" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg>
-            Code
-          </a>
-        </div>
-      </article>
-
+      <article class="project-card"><div class="project-image"><img src="images\temple.png" alt="Murugan Pilgrim Guide App preview" loading="lazy"></div><p class="proj-tag">flutter</p><h3>Murugan Pilgrim Guide App</h3><p class="proj-sub">Pilgrimage Companion App</p><p class="proj-desc">A guide app supporting pilgrims with information and navigation for temple visits, built during the Zoho Corporation internship.</p><div class="chip-row small"><span class="chip">Flutter</span><span class="chip">Dart</span></div><div class="proj-links"><a href="https://github.com/elananu/murugan_pilgrim_app" target="_blank" rel="noopener">Code ↗</a></div></article>
+      <article class="project-card"><div class="project-image"><img src="images\timetable.png" alt="Flutter Timetable App preview" loading="lazy"></div><p class="proj-tag">flutter</p><h3>Flutter Timetable App</h3><p class="proj-sub">Class / Schedule Timetable App</p><p class="proj-desc">A Flutter-based timetable application for organizing and viewing class schedules.</p><div class="chip-row small"><span class="chip">Flutter</span><span class="chip">Dart</span></div><div class="proj-links"><a href="https://github.com/elananu/flutter_timetable_app" target="_blank" rel="noopener">Code ↗</a></div></article>
+      <article class="project-card"><div class="project-image"><img src="images\tablet.png" alt="Meedicare app preview" loading="lazy"></div><p class="proj-tag">flutter</p><h3>Meedicare</h3><p class="proj-sub">Medicine Reminder & Tracker App</p><p class="proj-desc">A Flutter-based healthcare app for managing medicine reminders and patient records, with Firebase handling secure data storage.</p><div class="chip-row small"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span></div><div class="proj-links"><a href="https://github.com/elananu/meedicare_flutter_app" target="_blank" rel="noopener">Code ↗</a></div></article>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
 <section class="section alt" id="certifications" aria-label="Certifications">
   <div class="section-inner">
     <p class="label">Continuous Learning</p>
@@ -469,47 +451,153 @@
       <span class="cert-chip">Cisco — Introduction to Cybersecurity</span>
       <span class="cert-chip">Cisco — Introduction to Data Science</span>
       <span class="cert-chip">Cisco — Operating System Basics</span>
-      <span class="cert-chip">Udemy — OS: File System &amp; Threads</span>
-      <span class="cert-chip">HP Foundation — Data Science &amp; Analytics</span>
+      <span class="cert-chip">Udemy — OS: File System & Threads</span>
+      <span class="cert-chip">HP Foundation — Data Science & Analytics</span>
       <span class="cert-chip">IUCEE — Overview of Emerging Technologies</span>
       <span class="cert-chip">GUVI — Python Programming</span>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact" aria-label="Contact">
   <div class="section-inner">
     <p class="label">Let's Talk</p>
     <h2 class="section-title">Get In <span>Touch</span></h2>
     <div class="contact-wrapper">
       <div class="contact-info">
-        <a class="contact-item" href="mailto:anusriie@gmail.com">
-          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></span>
-          <span><span class="c-label">Email</span>anusriie@gmail.com</span>
-        </a>
-        <a class="contact-item" href="tel:+918148301409">
-          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.5 2.1L8 9.7a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg></span>
-          <span><span class="c-label">Phone</span>+91 81483 01409</span>
-        </a>
-        <a class="contact-item" href="https://github.com/elananu" target="_blank" rel="noopener">
-          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6a4.6 4.6 0 011.2-3.2 4.2 4.2 0 01.1-3.2s1-.3 3.3 1.2a11.5 11.5 0 016 0C17.3 4.9 18.3 5.2 18.3 5.2a4.2 4.2 0 01.1 3.2 4.6 4.6 0 011.2 3.2c0 4.7-2.8 5.7-5.5 6 .4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3z"/></svg></span>
-          <span><span class="c-label">GitHub</span>github.com/elananu</span>
-        </a>
-        <a class="contact-item" href="https://www.linkedin.com/in/anu-srii-707a2b28a" target="_blank" rel="noopener">
-          <span class="c-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 8.98h4v12.02H3zM9 8.98h3.8v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1v6.34h-4v-5.62c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96v5.72H9z"/></svg></span>
-          <span><span class="c-label">LinkedIn</span>anu-srii-707a2b28a</span>
-        </a>
+        <a class="contact-item" href="mailto:anusriie@gmail.com"><span class="c-label">Email</span>anusriie@gmail.com</a>
+        <a class="contact-item" href="tel:+918148301409"><span class="c-label">Phone</span>+91 81483 01409</a>
+        <a class="contact-item" href="https://github.com/elananu" target="_blank" rel="noopener"><span class="c-label">GitHub</span>github.com/elananu</a>
+        <a class="contact-item" href="https://www.linkedin.com/in/anu-srii-707a2b28a" target="_blank" rel="noopener"><span class="c-label">LinkedIn</span>anu-srii-707a2b28a</a>
       </div>
+
+      <form class="contact-form" id="contactForm">
+
+        <label for="contact-name">Your Name</label>
+        <input
+          id="contact-name"
+          name="from_name"
+          type="text"
+          placeholder="Your full name"
+          required
+        >
+
+        <label for="contact-email">Your Email</label>
+        <input
+          id="contact-email"
+          name="from_email"
+          type="email"
+          placeholder="you@example.com"
+          required
+        >
+
+        <label for="contact-message">Your Message</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="6"
+          placeholder="Tell me about the role or project..."
+          required
+        ></textarea>
+
+        <button type="submit" class="contact-submit" id="contactSubmit">
+          Send Message <span aria-hidden="true">↗</span>
+        </button>
+
+        <p class="contact-note" id="contactStatus">
+          Your message will be sent directly to my email.
+        </p>
+
+      </form>
     </div>
+  </div>
 </section>
 
 </main>
 
-<footer>
-  <p>© 2026 <span>Anusrii E</span> — built end-to-end, like everything else here.</p>
-</footer>
+<footer><p>© 2026 <span>Anusrii E</span> — built end-to-end.</p></footer>
+
+
+<!-- =====================================================
+     EMAILJS
+     ===================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+
+/* Mobile navigation fallback */
+document.getElementById("hamburger")?.addEventListener("click", function(){
+  const nav=document.getElementById("navLinks");
+  const open=this.getAttribute("aria-expanded")==="true";
+
+  this.setAttribute("aria-expanded",String(!open));
+  nav?.classList.toggle("open",!open);
+});
+
+
+/* =====================================================
+   EMAILJS CONTACT FORM
+   ===================================================== */
+
+emailjs.init({
+  publicKey: "hFp82JquWyIChxGR-"
+});
+
+
+document.getElementById("contactForm")?.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  const form = this;
+  const button = document.getElementById("contactSubmit");
+  const status = document.getElementById("contactStatus");
+
+  button.disabled = true;
+  button.innerHTML = 'Sending... <span aria-hidden="true">↗</span>';
+
+  status.textContent = "Sending your message...";
+
+
+  emailjs.sendForm(
+    "service_r5oqomc",
+    "template_u67ywx3",
+    form
+  )
+
+  .then(function(){
+
+    status.textContent = "Message sent successfully! ✅";
+
+    button.disabled = false;
+    button.innerHTML = 'Message Sent ✓';
+
+    form.reset();
+
+    setTimeout(function(){
+      button.innerHTML = 'Send Message <span aria-hidden="true">↗</span>';
+      status.textContent = "Your message will be sent directly to my email.";
+    }, 3000);
+
+  })
+
+  .catch(function(error){
+
+    console.error("EmailJS Error:", error);
+
+    status.textContent = "Failed to send message. Please try again. ❌";
+
+    button.disabled = false;
+    button.innerHTML = 'Send Message <span aria-hidden="true">↗</span>';
+
+  });
+
+});
+
+</script>
 
 <script src="script.js"></script>
+
 </body>
 </html>
+```
